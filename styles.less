@@ -1,0 +1,139 @@
+@import 'variables.less';
+@import 'mixins.less';
+//imports the seperate variable file
+
+
+//Install Custom Font, bottom of page
+@font-face {
+       font-family: 'myFirstFont';
+       src: url('fonts/bc_font.ttf');
+}
+
+.MyFont {
+   font-family: 'myFirstFont';
+   text-align: center;
+   font-size: 26px;
+}
+
+body{
+	padding-top:50px;
+}
+//Change button color
+.btn-primary {
+	background-color: @primary_background_color;
+	border-color: white;
+}
+
+// change nav background to primary color
+.nav_bground {
+    background-color: @primary_background_color;
+    border-color: #000000;
+}
+
+nav ul {
+    background-color: @primary_background_color;
+    
+    li {
+        color: #383838;
+    }
+}
+
+h1 {
+    font-family: @lrg_font_fam;
+    text-align: center;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: @lrg_font_fam;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+h3 {
+    font-family: @lrg_font_fam;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wrapper {
+    padding-top: 50px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+
+hr {
+    color: @primary_background_color;
+    height: 2px;
+    background-color: @primary_background_color;
+    
+}
+
+.exp_section ul {
+    text-align: left;
+    font-family: bold;
+    
+    li {
+        list-style-type: none;
+        padding-left: 12px;
+        text-align: left;
+    }
+}
+
+.contact_box {
+    background-color: @primary_background_color;
+    width: 60%;
+    padding: 5px 20px 5px 100px;
+    text-align: left;
+    margin: auto;
+    color: #000000;
+    .border-radius;
+}
+
+.contact_box2 {
+    width: 90%;
+    padding: 5px 20px 5px 10px;
+    text-align: center;
+    margin: auto;
+    color: #000000;
+}
+
+.submit_btn {
+    padding:5px 15px;
+    background: #fff;
+    width: 200px;
+    border:0 none;
+    cursor:pointer;
+    .border-radius;
+}
+
+.text_box_style {
+    width: 200px;
+	height: 120px;
+	padding: 2px;
+}
+
+.text_label_style {
+    width: 200px;
+	height: 20px;
+	padding: 2px;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    
+    a {
+    text-decoration: none;
+        &:hover, &:focus {
+            color: #434343;
+            }
+        &:visited {
+           color: @primary_background_color;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+// mixin example
+
+.border-radius (@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.mixin (@a) when (lightness(@a) >= 50%) {
+  background-color: black;
+  width: 100px;
+  height: 60px;
+}
+.mixin (@a) when (lightness(@a) < 50%) {
+  background-color: white;
+  width: 100px;
+  height: 60px;
+}
+.mixin (@a) {
+  color: @a;
+}
